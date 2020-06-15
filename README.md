@@ -1,8 +1,5 @@
-# batchboost (currently a draft)
-By [Maciej A. Czyzewski](https://github.com/maciejczyzewski)
+# BatchBoost 
 
-This repository contains the implementation used for the results in
-our paper (https://arxiv.org/abs/2001.07627).
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/batchboost-regularization-for-stabilizing/image-classification-on-cifar-10)](https://paperswithcode.com/sota/image-classification-on-cifar-10?p=batchboost-regularization-for-stabilizing)
 
@@ -14,10 +11,6 @@ _Batchboost_ is a simple technique to accelerate ML model training by adaptively
 	<img src="figures/figure-abstract.png" width="50%">
 	<img src="figures/figure-feeding.png" width="49%">
 </div>
-
-## Introduction
-
-> **UPDATE 24/01/2020:** Thank you for your e-mails asking about _batchboost_. As promised, I will update the results soon and present comparisons with other solutions (paperswithcode.com). This is a draft and research needs to be continued to be complete work, if someone is interested in helping me, please contact.
 
 ### Overview
 
@@ -84,7 +77,7 @@ $ CUDA_VISIBLE_DEVICES=0 python3 train.py --decay=1e-4 --no-augment --seed=1 \
 
 ## Using
 
-File [`batchboost.py`](https://github.com/maciejczyzewski/batchboost/tree/master/batchboost.py) should be portable, just copy into your path and write the following:
+File [`batchboost.py`] is portable, just copy into your path and write the following:
 
 ```python3
 from batchboost import BatchBoost
@@ -155,28 +148,3 @@ for batch_idx, (new_inputs, new_targets) in enumerate(trainloader):
 
 	...
 ```
-
-## Citation
-
-If you find _batchboost_ useful in your research, please consider citing:
-
-```bibtex
-@misc{czyzewski2020batchboost,
-    title={batchboost: regularization for stabilizing training with resistance to underfitting & overfitting},
-    author={Maciej A. Czyzewski},
-    year={2020},
-    eprint={2001.07627},
-    archivePrefix={arXiv},
-    primaryClass={cs.LG}
-}
-```
-
-_An interesting topic for further research and discussion are
-combination of batchboost and existing methods._
-
-## License
-
-Implemented as fork of ["mixup-cifar10 / facebook"](https://github.com/facebookresearch/mixup-cifar10).
-This project is CC-BY-NC-licensed.
-
-<img src="figures/pp_logo.jpg" width="350px">
