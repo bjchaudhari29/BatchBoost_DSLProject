@@ -25,12 +25,6 @@ Batchboost pipeline has three stages:
 (c) _feeding_: constructing training mini-batch with created examples and new samples from dataset (concat with ratio γ).
 Note that sample from dataset propagates with subsequent iterations with less and less importance until the end of training.
 
-<div align="left">
-	<a href="https://arxiv.org/abs/2001.07627">
-		<img src="paper/arxiv-abstract-shadow.png" height="325">
-	</a>
-</div>
-
 ### Results
 
 > **COMING:** comparison of _batchboost_ applied: to different architectures, to different problems (small datasets), for training GAN-s, with/without augmentation, with different parameters {window_normal, window_boost, factor} (hyperparameter tuning).
