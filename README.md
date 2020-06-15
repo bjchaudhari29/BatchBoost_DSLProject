@@ -1,7 +1,6 @@
 # BatchBoost 
 
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/batchboost-regularization-for-stabilizing/image-classification-on-cifar-10)](https://paperswithcode.com/sota/image-classification-on-cifar-10?p=batchboost-regularization-for-stabilizing)
 
 ---
 
